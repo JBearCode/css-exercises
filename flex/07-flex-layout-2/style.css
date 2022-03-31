@@ -10,6 +10,8 @@ body {
   height: 72px;
   background: darkmagenta;
   color: white;
+  display: flex;
+  align-items: center;
 }
 
 .footer {
@@ -23,7 +25,18 @@ body {
 
 .sidebar {
   width: 300px;
+  padding: 12px;
+  flex-shrink: 0;
   background: royalblue;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
 }
 
 .card {
@@ -34,4 +47,23 @@ body {
 
 .main {
   flex: 1;
+  display: flex;
+}
+
+#header-text {
+  font-weight: 900;
+  font-size: 28px;
+  padding-left: 20px;
+}
+
+.card-holder {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 36px;
+}
+
+.card {
+  padding: 16px;
+  margin: 16px;
+  width: 300px;
 }
